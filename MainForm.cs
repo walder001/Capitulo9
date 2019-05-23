@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Capitulo9.IU.Registro;
+using Capitulo9.IU.Registro.Mascota;
+
 
 namespace Capitulo9
 {
@@ -25,11 +27,13 @@ namespace Capitulo9
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+       
+
+        private void Ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            rMascota mas = new rMascota();
 
-
+            mas.Show();
         }
     }
 }

@@ -80,6 +80,18 @@ namespace Capitulo9.IU.Registro
 
         }
 
+        public void Ag()
+        {
+            ProductosTienda n = new ProductosTienda();
+            n.Codigo = txtCodigo.Text;
+            n.Nombre = txtNombre.Text;
+            n.Precio = txtPrecio.Text;
+            n.Cantidad = txtCantidad.Text;
+            vector.Add(n);
+            MessageBox.Show("Guardado");
+
+        }
+
         public void Mostrar()
         {
             dataTable.DataSource = null;

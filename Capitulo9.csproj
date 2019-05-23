@@ -47,26 +47,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Metodos.cs" />
-    <Compile Include="Entidades\Product.cs" />
-    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\PersonaMascota\Mascota.cs" />
+    <Compile Include="Entidades\PersonaMascota\Persona.cs" />
+    <Compile Include="Entidades\InventarioTienda\Product.cs" />
+    <Compile Include="Entidades\InventarioTienda\Producto.cs" />
+    <Compile Include="IU\Registro\Mascota\rMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\Registro\Mascota\rMascota.Designer.cs">
+      <DependentUpon>rMascota.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="IU\Registro\rProducto.cs">
+    <Compile Include="IU\Registro\InventarioTienda\rProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IU\Registro\rProducto.Designer.cs">
+    <Compile Include="IU\Registro\InventarioTienda\rProducto.Designer.cs">
       <DependentUpon>rProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IU\Registro\Mascota\rMascota.resx">
+      <DependentUpon>rMascota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IU\Registro\rProducto.resx">
+    <EmbeddedResource Include="IU\Registro\InventarioTienda\rProducto.resx">
       <DependentUpon>rProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
