@@ -46,15 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\Metodos.cs" />
-    <Compile Include="Entidades\PersonaMascota\Mascota.cs" />
-    <Compile Include="Entidades\PersonaMascota\Persona.cs" />
-    <Compile Include="Entidades\InventarioTienda\Product.cs" />
-    <Compile Include="Entidades\InventarioTienda\Producto.cs" />
-    <Compile Include="IU\Registro\Mascota\rMascota.cs">
+    <Compile Include="Capitulo10\Entidades\InformacionEsstudiante.cs" />
+    <Compile Include="Capitulo10\Entidades\InventarioTienda.cs" />
+    <Compile Include="Capitulo10\Entidades\Poligonos.cs" />
+    <Compile Include="Capitulo9\BLL\Metodos.cs" />
+    <Compile Include="Capitulo9\Entidades\PersonaMascota\Mascota.cs" />
+    <Compile Include="Capitulo9\Entidades\PersonaMascota\Persona.cs" />
+    <Compile Include="Capitulo9\Entidades\InventarioTienda\Product.cs" />
+    <Compile Include="Capitulo9\Entidades\InventarioTienda\Producto.cs" />
+    <Compile Include="Capitulo9\IU\Registro\Mascota\rMascota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IU\Registro\Mascota\rMascota.Designer.cs">
+    <Compile Include="Capitulo9\IU\Registro\Mascota\rMascota.Designer.cs">
       <DependentUpon>rMascota.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -63,21 +66,21 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="IU\Registro\InventarioTienda\rProducto.cs">
+    <Compile Include="Capitulo9\IU\Registro\InventarioTienda\rProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IU\Registro\InventarioTienda\rProducto.Designer.cs">
+    <Compile Include="Capitulo9\IU\Registro\InventarioTienda\rProducto.Designer.cs">
       <DependentUpon>rProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IU\Registro\Mascota\rMascota.resx">
+    <EmbeddedResource Include="Capitulo9\IU\Registro\Mascota\rMascota.resx">
       <DependentUpon>rMascota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IU\Registro\InventarioTienda\rProducto.resx">
+    <EmbeddedResource Include="Capitulo9\IU\Registro\InventarioTienda\rProducto.resx">
       <DependentUpon>rProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -102,6 +105,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Capitulo10\BLL\" />
+    <Folder Include="Capitulo10\UI\" />
+    <Folder Include="Capitulo12\BLL\" />
+    <Folder Include="Capitulo12\DAL\" />
+    <Folder Include="Capitulo12\Entidades\" />
+    <Folder Include="Capitulo12\UI\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
