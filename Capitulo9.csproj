@@ -46,9 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capitulo10\Entidades\InformacionEsstudiante.cs" />
+    <Compile Include="Capitulo10\Entidades\InformacionEstudiante.cs" />
     <Compile Include="Capitulo10\Entidades\InventarioTienda.cs" />
     <Compile Include="Capitulo10\Entidades\Poligonos.cs" />
+    <Compile Include="Capitulo10\UI\Registro\Poligono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capitulo10\UI\Registro\Poligono.Designer.cs">
+      <DependentUpon>Poligono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capitulo10\UI\Registro\rEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capitulo10\UI\Registro\rEstudiante.Designer.cs">
+      <DependentUpon>rEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capitulo10\UI\Registro\rInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capitulo10\UI\Registro\rInventario.Designer.cs">
+      <DependentUpon>rInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Capitulo9\BLL\Metodos.cs" />
     <Compile Include="Capitulo9\Entidades\PersonaMascota\Mascota.cs" />
     <Compile Include="Capitulo9\Entidades\PersonaMascota\Persona.cs" />
@@ -74,6 +92,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rInventarioa.cs" />
+    <EmbeddedResource Include="Capitulo10\UI\Registro\rEstudiante.resx">
+      <DependentUpon>rEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capitulo10\UI\Registro\rInventario.resx">
+      <DependentUpon>rInventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Capitulo9\IU\Registro\Mascota\rMascota.resx">
       <DependentUpon>rMascota.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,7 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Capitulo10\BLL\" />
-    <Folder Include="Capitulo10\UI\" />
     <Folder Include="Capitulo12\BLL\" />
     <Folder Include="Capitulo12\DAL\" />
     <Folder Include="Capitulo12\Entidades\" />

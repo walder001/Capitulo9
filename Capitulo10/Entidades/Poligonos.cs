@@ -16,10 +16,6 @@ namespace Capitulo9.Capitulo10.Entidades
         public float Alto { get; set; }
 
 
-
-
-
-
         //Sobrecargando constructor
         public Poligono(float ancho, float largo)
         {
