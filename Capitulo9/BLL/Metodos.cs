@@ -12,13 +12,10 @@ namespace Capitulo9.BLL
     public class Metodos
     {
         string[] m = new string[100];
-        
-        public void agregar(string codigo, string nombre, string precio, string cantidad)
-        {
-          
 
-        }
+
         
+       
 
     }
 }

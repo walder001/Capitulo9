@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace Capitulo9.Entidades
 {
     
-        public class Persona : Mascota
+        public struct Persona 
         {
             public string Nombre { get; set; }
             public int edad { get; set; }
             public string genero { get; set; }
+
 
 
     }

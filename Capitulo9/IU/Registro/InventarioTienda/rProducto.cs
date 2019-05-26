@@ -13,53 +13,39 @@ using Capitulo9.IU.Registro;
 using Capitulo9;
 using System.Collections;
 
+
 namespace Capitulo9.IU.Registro
 {
     public partial class rProducto : Form
     {
-        ArrayList vector = new ArrayList();
+        /// <summary>
+        /// Declaracion de un array list global 
+        /// </summary>
+        /// 
+        ArrayList vector; 
 
-        public ProductosTienda[] pro = new ProductosTienda[50];
-        public void Inicializar()
-        {
-            Product n = new Product();
-            n.Codigo = txtCodigo.Text;
-            n.Nombre = txtNombre.Text;
-            n.Precio = txtPrecio.Text;
-            n.Cantidad = txtCantidad.Text;
-            vector.Add(n);
-
-            dataTable.DataSource = null;
-            dataTable.DataSource = vector;
-
-        }
-       
-
+        //Constructor de la clase producto
         public rProducto()
         {
             InitializeComponent();
+            vector =new ArrayList();
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-            Mostrar();
-            Limpiar();
-        }
-  
         
+        //Evento para limpiar el formulario
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         
         }
 
+        //Evento que guardar que agrega en el array list
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             Agregar();
             Limpiar();
         }
 
+        //Metodo que limpia el formulatio
         public void Limpiar()
         {
             txtCodigo.Text = string.Empty;
@@ -68,6 +54,8 @@ namespace Capitulo9.IU.Registro
             txtCantidad.Text = string.Empty;
 
         }
+
+        //Metodo para agregar a el array list
         public void Agregar()
         {
             Product n = new Product();
@@ -76,22 +64,11 @@ namespace Capitulo9.IU.Registro
             n.Precio = txtPrecio.Text;
             n.Cantidad = txtCantidad.Text;
             vector.Add(n);
-            MessageBox.Show("Guardado");
+            MessageBox.Show("Guardado","Informacion",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
 
-        public void Ag()
-        {
-            ProductosTienda n = new ProductosTienda();
-            n.Codigo = txtCodigo.Text;
-            n.Nombre = txtNombre.Text;
-            n.Precio = txtPrecio.Text;
-            n.Cantidad = txtCantidad.Text;
-            vector.Add(n);
-            MessageBox.Show("Guardado");
-
-        }
-
+        //Metodo para mostrar en el dataGriewView
         public void Mostrar()
         {
             dataTable.DataSource = null;

@@ -71,7 +71,6 @@
     <Compile Include="Capitulo9\Entidades\PersonaMascota\Mascota.cs" />
     <Compile Include="Capitulo9\Entidades\PersonaMascota\Persona.cs" />
     <Compile Include="Capitulo9\Entidades\InventarioTienda\Product.cs" />
-    <Compile Include="Capitulo9\Entidades\InventarioTienda\Producto.cs" />
     <Compile Include="Capitulo9\IU\Registro\Mascota\rMascota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +92,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rInventarioa.cs" />
+    <EmbeddedResource Include="Capitulo10\UI\Registro\Poligono.resx">
+      <DependentUpon>Poligono.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Capitulo10\UI\Registro\rEstudiante.resx">
       <DependentUpon>rEstudiante.cs</DependentUpon>
     </EmbeddedResource>
